@@ -1,0 +1,48 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>View of new</title>
+        <link rel="stylesheet" href="{% static 'meeting_app/css/styles.css' %}">
+        <link rel="icon" href="{% static 'meeting_app/img/icon.png' %}" type="image/x-icon">
+    </head>
+    <body>
+        <div class="band"></div>
+        </div>
+
+        <div class="form_input">
+                <div class="subblock_6">
+                    <h3 type="text" id="one" name="Surname" placeholder="Фамилия" class="form_style">{{ surname }}</h3>
+                    <hr>
+                    <h3 type="text" name="Name" placeholder="Имя" class="form_style">{{ name }}</h3>
+                    <hr>
+                    <h3 type="text" name="Mail" placeholder="Почта" class="form_style">{{ mail }}</h3>
+                    <hr>
+                    <h3 type="text" name="Phone" placeholder="Телефон" class="form_style">{{ phone }}</h3>
+                    <hr>
+                    <br>
+                    <h3 class="h_exmpls">Выберите подходящее для вас время:</h3>
+                    <br>
+
+
+                    <div class="sel">
+                        {% for dt in dates %}
+                            <div class="form_radio_btn">
+                                <input id={{ dt.name }} type="radio" name="radio" value={{ dt.obj }} checked>
+                                <label for={{ dt.name }}><p class="form_style_2"><strong>Дата: {{ dt.obj.date_entry }} <br> Время: {{ dt.obj.time_entry }}</strong></p></label>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                    <button type="submit" class="button">Записаться</button>
+
+
+
+                </div>
+        </div>
+        
+
+        <script src="{% static 'meeting_app/js/script.js' %}"></script>
+    </body>
+</html>

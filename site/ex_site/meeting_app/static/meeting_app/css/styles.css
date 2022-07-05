@@ -16,9 +16,6 @@ h3 {
 .personal_card {
     border-radius: 30px;
     box-shadow: 0 5px 10px;
-    /*
-    background-color: #f5b5f1;
-    */
     width: 1000px;
     margin: 30px auto;
     padding: 20px;
@@ -41,10 +38,6 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 5px 10px;
-    /*
-    border-style: solid;
-    border-color: purple;
-    */
 }
 
 .blocks_img {
@@ -60,28 +53,28 @@ h3 {
 }
 
 @font-face {
-    font-family: Pompadur; /* Гарнитура шрифта */
-    src: url(../fonts/Graffiti.ttf); /* Путь к файлу со шрифтом */
+    font-family: Pompadur; 
+    src: url(../fonts/Graffiti.ttf); 
     }
 
 @font-face {
-    font-family: author; /* Гарнитура шрифта */
-    src: url(../fonts/author.ttf); /* Путь к файлу со шрифтом */
+    font-family: author; 
+    src: url(../fonts/author.ttf); 
     }
 
 @font-face {
-    font-family: phrase; /* Гарнитура шрифта */
-    src: url(../fonts/phrase.ttf); /* Путь к файлу со шрифтом */
+    font-family: phrase; 
+    src: url(../fonts/phrase.ttf); 
     }
 
 @font-face {
-    font-family: zerno; /* Гарнитура шрифта */
-    src: url(../fonts/zerno.ttf); /* Путь к файлу со шрифтом */
+    font-family: zerno; 
+    src: url(../fonts/zerno.ttf); 
     }
 
 @font-face {
-    font-family: aleg; /* Гарнитура шрифта */
-    src: url(../fonts/aleg.ttf); /* Путь к файлу со шрифтом */
+    font-family: aleg; 
+    src: url(../fonts/aleg.ttf); 
     }
 
 .text {
@@ -269,13 +262,20 @@ hr {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 5px 10px;
-    /*
-    border-style: solid;
-    border-color: purple;
-    */
 }
 
-.form {
+.personal_img_2 {
+    width: 200px;
+    height: 200px;
+    display: block;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5px 10px;
+}
+
+.form_input {
     width: 50%;
     border-radius: 30px;
     margin: auto;
@@ -285,10 +285,6 @@ hr {
 
 .form_style {
     border: none;
-    /*
-    border-radius: 30px;
-    box-shadow: 0 5px 10px;
-    */
     border-color: #f5b5f1;
     background-color: #f5b5f1;
     font-size: 40px;
@@ -324,4 +320,52 @@ hr {
     border-color: #f274f2;
     font-family: Pompadur, cursive;
     font-size: 50px;
+}
+
+.form_radio_btn {
+	display: inline-block;
+	margin: auto;
+    margin-top: 20px;
+}
+
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border: 1px solid #999;
+	border-radius: 6px;
+	user-select: none;
+}
+
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+	background: #f274f2;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+	color: #666;
+}
+
+.sel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.form_style_2 {
+    border: none;
+    border-color: #f5b5f1;
+    font-size: 20px;
+    color: purple;
+    font-family: zerno, 'Comic Sans MS', cursive;
+
 }
